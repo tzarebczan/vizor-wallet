@@ -47,7 +47,7 @@ static LEDGER_OPERATION: Mutex<()> = Mutex::new(());
 static LEDGER_OPERATION_STATE: OperationState = OperationState::new();
 #[cfg(any(target_os = "macos", target_os = "windows", target_os = "linux"))]
 static LEDGER_SIGNING_READY_AT: Mutex<Option<Instant>> = Mutex::new(None);
-const LEDGER_OPERATION_TIMEOUT: Duration = Duration::from_secs(5 * 60);
+const LEDGER_OPERATION_TIMEOUT: Duration = Duration::from_secs(30 * 60);
 const APP_TRANSITION_TIMEOUT: Duration = Duration::from_secs(10);
 const APP_TRANSITION_POLL_INTERVAL: Duration = Duration::from_millis(200);
 #[cfg(any(target_os = "macos", target_os = "windows", target_os = "linux"))]

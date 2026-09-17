@@ -41,7 +41,7 @@ const HID_WRITE_SIZE: usize = 65;
 const HID_READ_SIZE: usize = 64;
 const HID_POLL_MILLIS: u64 = 100;
 const REVIEW_BUSY_STATUS: u16 = 0x6901;
-const REVIEW_BUSY_MAX_ATTEMPTS: usize = 3;
+const REVIEW_BUSY_MAX_ATTEMPTS: usize = 9_000;
 const REVIEW_BUSY_RETRY_DELAY: std::time::Duration = std::time::Duration::from_millis(200);
 
 #[cfg(debug_assertions)]

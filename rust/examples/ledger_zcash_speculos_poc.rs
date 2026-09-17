@@ -52,7 +52,7 @@ use zcash_client_backend::{
 use zcash_client_sqlite::{util::SystemClock, wallet::commitment_tree, WalletDb};
 
 const DEFAULT_API_URL: &str = "http://127.0.0.1:5000";
-const APDU_TIMEOUT: Duration = Duration::from_secs(5 * 60);
+const APDU_TIMEOUT: Duration = Duration::from_secs(30 * 60);
 const API_TIMEOUT: Duration = Duration::from_secs(3);
 const BOLOS_CLA: u8 = 0xb0;
 const GET_APP_AND_VERSION: u8 = 0x01;
